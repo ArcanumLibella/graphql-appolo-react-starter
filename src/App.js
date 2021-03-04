@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache, ApolloProvider, httpLink } from '@apollo/client';
-import './App.css';
+import './assets/scss/app.scss';
 
 // COMPONENTS
 import Home from './Pages/Home';
