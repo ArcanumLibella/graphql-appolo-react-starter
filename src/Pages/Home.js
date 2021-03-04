@@ -30,12 +30,12 @@ function Home() {
         </div>
 
           {data && (
-          <div className="weather">
-              <h2>{ data.getCityByName.name }</h2>
-              <p>Temperature : <span>{ data.getCityByName.weather.temperature.actual }</span></p>
-              <p>Description : <span>{ data.getCityByName.weather.summary.description }</span></p>
-              <p>Wind speed : <span>{ data.getCityByName.weather.wind.speed }</span></p>
-          </div>
+            <div className="weather">
+                <h2>{ data.getCityByName.name }</h2>
+                <p>Temperature : <span>{ data.getCityByName.weather.temperature.actual }</span></p>
+                <p>Description : <span>{ data.getCityByName.weather.summary.description }</span></p>
+                <p>Wind speed : <span>{ data.getCityByName.weather.wind.speed }</span></p>
+            </div>
           )}
       </div>
     </HomepageStyled>
@@ -91,6 +91,7 @@ const HomepageStyled = styled.main`
   input {
     flex: 1;
     padding: 12px;
+    font-weight: bold;
     border: none;
     border-radius: 8px 0 0 8px;
   }
@@ -101,6 +102,7 @@ const HomepageStyled = styled.main`
     border: none;
     border-radius: 0 8px 8px 0;
     text-transform: uppercase;
+    cursor: pointer;
   }
 `
 
